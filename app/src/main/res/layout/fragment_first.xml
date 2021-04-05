@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEtNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama :"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEtSquad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Squad :"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSquad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEtAngkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angkatan :"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAngkatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutEtHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hobby :"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnFragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment 1"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_700"/>
+        <Button
+            android:id="@+id/btnFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment 2"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_below="@id/btnFragment1"/>
+
+    </RelativeLayout>
+</LinearLayout>
